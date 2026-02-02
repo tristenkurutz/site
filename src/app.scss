@@ -1,13 +1,23 @@
+@tailwind base;
+
 @font-face {
-  font-family: 'GT Walsheim Pro Black';
-  src: url('/GT-Walsheim-Pro-Black.ttf') format('truetype');
+  font-family: "GT Walsheim Pro Black";
+  src: url("/GT-Walsheim-Pro-Black.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 .font-myfont {
-  font-family: 'GT Walsheim Pro Black', sans-serif;
+  font-family: "GT Walsheim Pro Black", sans-serif;
   letter-spacing: -0.05em;
   white-space: normal;
   line-height: 0.75;
+}
+@layer base {
+  h1 {
+    @apply font-myfont lg:text-5xl md:text-4xl sm:text-3xl text-2xl;
+  }
+  h2 {
+    @apply lg:text-4xl md:text-3xl sm:text-2xl text-xl;
+  }
 }

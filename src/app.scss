@@ -18,6 +18,12 @@
     @apply font-myfont lg:text-5xl md:text-4xl sm:text-3xl text-2xl;
   }
   h2 {
-    @apply lg:text-4xl md:text-3xl sm:text-2xl text-xl;
+    @apply lg:text-4xl md:text-3xl sm:text-2xl text-xl mb-5;
+  }
+  h3 {
+    @apply lg:text-3xl md:text-2xl sm:text-xl text-lg mb-1;
+  }
+  p {
+    @apply lg:text-lg md:text-base sm:text-sm text-sm mb-3 max-w-4xl;
   }
 }

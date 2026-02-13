@@ -1,7 +1,26 @@
-<div id="accordion">
+<script lang="ts">
+  import { BxDownArrow, BxUpArrow } from "svelte-boxicons";
+
+  export let open: boolean = false;
+
+  function toggleOpen() {
+    open = !open;
+  }
+</script>
+
+<div id="accordion" class="mt-5">
   <div id="accordion-top" class="flex">
-    <div id="accordion-header" class="items-start">title</div>
-    <div id="dropdown-icon" class="ml-auto">icon</div>
+    <h4 id="accordion-header" class="items-start">title</h4>
+    <button id="dropdown-icon" class="ml-auto" on:click={toggleOpen}>
+      {#if !open}
+        <BxDownArrow />
+      {/if}
+      {#if open}
+        <BxUpArrow />
+      {/if}</button
+    >
   </div>
-  <div id="accordion-content">content</div>
+  {#if open}
+    <div id="accordion-content">content</div>
+  {/if}
 </div>

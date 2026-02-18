@@ -1,0 +1,69 @@
+{
+  "experience": [
+    {
+      "title": "Frontend Software Intern",
+      "company": "Benco Dental",
+      "location": "Virtual",
+      "startDate": "Jan 2026",
+      "endDate": "Present",
+      "technologies": ["C#", ".NET", "React"],
+      "responsibilities": [
+        "Contributing to full-stack applications with a C# (.NET) backend and React frontend as part of a cross-functional engineering team",
+        "Designing and implementing unit tests using mock objects to ensure reliability, coverage, and dependency isolation",
+        "Resolving frontend tickets for e-commerce platform and internal applications, addressing UI bugs, performance issues, and edge cases"
+      ]
+    },
+    {
+      "title": "Full-Stack Software Intern",
+      "company": "Innovative Systems, Inc.",
+      "location": "Pittsburgh, PA",
+      "startDate": "Sep 2025",
+      "endDate": "Dec 2025",
+      "technologies": ["C#", ".NET", "React"],
+      "responsibilities": [
+        "Extended existing full-stack applications by implementing features and fixes across C# (.NET) and React stacks",
+        "Led a refactor initiative to improve maintainability and scalability through stronger object-oriented design patterns",
+        "Reduced React warning count from 250+ to zero, improving debugging efficiency and creating a cleaner CI/CD pipeline"
+      ]
+    },
+    {
+      "title": "Frontend Software Intern",
+      "company": "M&T Bank",
+      "location": "Buffalo, NY",
+      "startDate": "Jun 2025",
+      "endDate": "Aug 2025",
+      "technologies": ["Angular", "Figma", "REST APIs"],
+      "responsibilities": [
+        "Designed and prototyped comprehensive dashboards in Figma to improve business workflow for viewing credit history disputes",
+        "Implemented services and components in Angular to streamline information from bank and third-party REST APIs into one location",
+        "Collaborated with business and technology stakeholders to design and deliver an efficient, user-focused application"
+      ]
+    },
+    {
+      "title": "Technology Intern",
+      "company": "M&T Bank",
+      "location": "Buffalo, NY",
+      "startDate": "Jun 2024",
+      "endDate": "Aug 2024",
+      "technologies": ["CI/CD", "Artifactory", "Security Scanning"],
+      "responsibilities": [
+        "Automated pipelines to manage artifacts in Artifactory and ran security scans across 30 applications",
+        "Identified and resolved 200+ vulnerabilities and conducted regression tests to ensure functionality",
+        "Collaborated with other teams to integrate security scanning tools into CI/CD pipelines"
+      ]
+    },
+    {
+      "title": "Web Developer",
+      "company": "Casey K. HQ",
+      "location": "Virtual",
+      "startDate": "Aug 2024",
+      "endDate": "Jun 2025",
+      "technologies": ["WordPress", "Elementor", "WooCommerce", "AutomatorWP"],
+      "responsibilities": [
+        "Utilized WordPress Elementor, WooCommerce, and AutomatorWP to design a seamless user experience",
+        "Designed and developed custom landing pages for painting workshops",
+        "Automated complex workflows using AutomatorWP to streamline user registration and email notifications"
+      ]
+    }
+  ]
+}

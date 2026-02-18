@@ -3,6 +3,9 @@
 
   export let open: boolean = false;
 
+  export let title;
+  export let bullets;
+
   function toggleOpen() {
     open = !open;
   }
@@ -10,7 +13,7 @@
 
 <div id="accordion" class="mt-5">
   <div id="accordion-top" class="flex">
-    <h4 id="accordion-header" class="items-start">title</h4>
+    <h4 id="accordion-header" class="items-start">{title}</h4>
     <button id="dropdown-icon" class="ml-auto" on:click={toggleOpen}>
       {#if !open}
         <BxDownArrow />
@@ -21,6 +24,6 @@
     >
   </div>
   {#if open}
-    <div id="accordion-content">content</div>
+    <div id="accordion-content">{bullets}</div>
   {/if}
 </div>

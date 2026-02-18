@@ -11,10 +11,10 @@
   }
 </script>
 
-<div id="accordion" class="mt-5">
+<div id="accordion" class="mt-8">
   <div id="accordion-top" class="flex">
     <h4 id="accordion-header" class="items-start">{title}</h4>
-    <button id="dropdown-icon" class="ml-auto" on:click={toggleOpen}>
+    <button id="dropdown-icon" class="ml-10" on:click={toggleOpen}>
       {#if !open}
         <BxDownArrow />
       {/if}

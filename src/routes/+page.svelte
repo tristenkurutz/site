@@ -4,7 +4,7 @@
 </script>
 
 <div class="flex flex-col items-center justify-center">
-  <div class="max-w-xl w-full text-left">
+  <div class="text-left">
     <h2>howdy!</h2>
     <h3>who am i?</h3>
     <p>

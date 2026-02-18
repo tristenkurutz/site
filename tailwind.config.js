@@ -1,10 +1,12 @@
-/** @type {import('tailwindcss').Config} */
 export const content = ["./src/**/*.{html,js,svelte,ts}"];
 export const theme = {
   extend: {
     fontFamily: {
       myfont: ["GT Walsheim Pro Black", "sans-serif"],
     },
+    /** This tailwind animation is created by Samuel Dawson
+     * https://tailwindflex.com/@samuel33/typewriter-animation-effect
+     **/
     keyframes: {
       typing: {
         "0%": {
@@ -33,4 +35,8 @@ export const theme = {
     },
   },
 };
-export const plugins = [];
+export const plugins = [
+  function ({ addVariant }) {
+    addVariant("contrast", ".high-contrast &");
+  },
+];

@@ -12,16 +12,21 @@
 </script>
 
 <div id="accordion" class="mt-8">
-  <div id="accordion-top" class="flex">
-    <h4 id="accordion-header" class="items-start">{title}</h4>
-    <button id="dropdown-icon" class="ml-10" on:click={toggleOpen}>
+  <!-- svelte-ignore a11y_click_events_have_key_events -->
+  <!-- svelte-ignore a11y_no_static_element_interactions -->
+  <div
+    id="accordion-top"
+    class="flex items-center gap-6 cursor-pointer"
+    on:click={toggleOpen}
+  >
+    <h4 id="accordion-header">{title}</h4>
+    <button id="dropdown-icon" class="shrink-0">
       {#if !open}
         <BxDownArrow />
-      {/if}
-      {#if open}
+      {:else}
         <BxUpArrow />
-      {/if}</button
-    >
+      {/if}
+    </button>
   </div>
   {#if open}
     <div id="accordion-content">{bullets}</div>

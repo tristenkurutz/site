@@ -5,7 +5,11 @@
 
 <div class="flex flex-col items-center justify-center">
   <div class="text-left">
-    <h2>howdy!</h2>
+    <h2
+      class="w-fit animate-typing overflow-hidden whitespace-nowrap border-r-2 pr-2"
+    >
+      howdy!
+    </h2>
     <h3>who am i?</h3>
     <p>
       My name is Tristen, I am a senior Software Engineering major at RIT.

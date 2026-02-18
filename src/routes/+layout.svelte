@@ -19,18 +19,10 @@
     <div
       class="nav flex flex-col sm:flex-row flex-wrap gap-3 sm:gap-5 items-start sm:items-center mt-5 sm:mt-0 ml-20"
     >
-      <button class="hover:text-stone-300 transition-colors duration-300"
-        >ABOUT</button
-      >
-      <button class="hover:text-stone-300 transition-colors duration-300"
-        >INDUSTRY EXP.</button
-      >
-      <button class="hover:text-stone-300 transition-colors duration-300"
-        >PROJECTS</button
-      >
-      <button class="hover:text-stone-300 transition-colors duration-300"
-        >CONTACT</button
-      >
+      <button class="nav-btn">ABOUT</button>
+      <button class="nav-btn">INDUSTRY EXP.</button>
+      <button class="nav-btn">PROJECTS</button>
+      <button class="nav-btn">CONTACT</button>
     </div>
   </div>
 </svelte:head>

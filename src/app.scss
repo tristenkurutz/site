@@ -1,5 +1,5 @@
 @tailwind base;
-
+@tailwind components;
 @font-face {
   font-family: "GT Walsheim Pro Black";
   src: url("/GT-Walsheim-Pro-Black.ttf") format("truetype");
@@ -22,6 +22,12 @@
 
 .container-main {
   @apply max-w-6xl mx-auto px-5 md:px-20 lg:px-40;
+}
+
+@layer components {
+  .nav-btn {
+    @apply hover:text-stone-300 transition-colors duration-300;
+  }
 }
 
 @layer base {

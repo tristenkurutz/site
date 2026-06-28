@@ -13,14 +13,16 @@
   </h2>
   <h3>Who am I?</h3>
   <p>
-    I'm Tristen, a software engineering student at RIT graduating Dec 2026. I'm currently at M&T Bank building a Java test orchestration platform from scratch.
-    I care a lot about process and ethics in software.  The why behind what we build is really important to me, and I want to make sure that what we build is 
-    accessible to all kinds of people, is maintainable, and secure.
+    I'm Tristen, a software engineering student at RIT graduating Dec 2026. I'm
+    currently at M&T Bank building a Java test orchestration platform from
+    scratch. I care a lot about process and ethics in software. The why behind
+    what we build is really important to me, and I want to make sure that what
+    we build is accessible to all kinds of people, is maintainable, and secure.
   </p>
   <p>
-    Outside of that: I am a cat dad of two, have a Rimworld habit that I couldn't be
-    paid a million dollars to break, do amateur photography, and pretty much any
-    craft I can get my hands on.
+    Outside of that: I am a cat dad of two, have a Rimworld habit that I
+    couldn't be paid a million dollars to break, do amateur photography, and
+    pretty much any craft I can get my hands on.
   </p>
 
   <div class="skills-row">

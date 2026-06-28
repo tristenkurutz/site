@@ -1,11 +1,24 @@
 {
   "experience": [
     {
+      "title": "Software Engineering Intern",
+      "company": "M&T Bank",
+      "location": "Buffalo, NY",
+      "startDate": "Jun 2026",
+      "endDate": "Present",
+      "technologies": ["Java", "Playwright", "GitLab CI/CD"],
+      "responsibilities": [
+        "Designing and building a Java-based test orchestration platform from the ground up as a solo project, replacing a legacy ReadyAPI setup",
+        "Migrated 75 API and message queue tests to Playwright, improving maintainability and enabling programmatic test control",
+        "Integrating the platform into GitLab CI/CD pipelines to automate weekly test execution across deployment workflows"
+      ]
+    },
+    {
       "title": "Frontend Software Intern",
       "company": "Benco Dental",
       "location": "Virtual",
       "startDate": "Jan 2026",
-      "endDate": "Present",
+      "endDate": "Jun 2026",
       "technologies": ["C#", ".NET", "React"],
       "responsibilities": [
         "Contributing to full-stack applications with a C# (.NET) backend and React frontend as part of a cross-functional engineering team",
@@ -40,19 +53,6 @@
       ]
     },
     {
-      "title": "Technology Intern",
-      "company": "M&T Bank",
-      "location": "Buffalo, NY",
-      "startDate": "Jun 2024",
-      "endDate": "Aug 2024",
-      "technologies": ["CI/CD", "Artifactory", "Security Scanning"],
-      "responsibilities": [
-        "Automated pipelines to manage artifacts in Artifactory and ran security scans across 30 applications",
-        "Identified and resolved 200+ vulnerabilities and conducted regression tests to ensure functionality",
-        "Collaborated with other teams to integrate security scanning tools into CI/CD pipelines"
-      ]
-    },
-    {
       "title": "Web Developer",
       "company": "Casey K. HQ",
       "location": "Virtual",
@@ -63,6 +63,19 @@
         "Utilized WordPress Elementor, WooCommerce, and AutomatorWP to design a seamless user experience",
         "Designed and developed custom landing pages for painting workshops",
         "Automated complex workflows using AutomatorWP to streamline user registration and email notifications"
+      ]
+    },
+    {
+      "title": "Technology Intern",
+      "company": "M&T Bank",
+      "location": "Buffalo, NY",
+      "startDate": "Jun 2024",
+      "endDate": "Aug 2024",
+      "technologies": ["CI/CD", "Artifactory", "Security Scanning"],
+      "responsibilities": [
+        "Automated pipelines to manage artifacts in Artifactory and ran security scans across 30 applications",
+        "Identified and resolved 200+ vulnerabilities and conducted regression tests to ensure functionality",
+        "Collaborated with other teams to integrate security scanning tools into CI/CD pipelines"
       ]
     }
   ]

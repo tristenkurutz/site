@@ -1,32 +1,64 @@
 <script lang="ts">
   import "../app.css";
   import "../app.scss";
+  import type { Snippet } from "svelte";
 
-  import { setContext, type Snippet } from "svelte";
   const { children }: { children: Snippet } = $props();
+
+  let menuOpen = $state(false);
+
+  const sections = ["about", "experience", "projects", "contact"];
+
+ function scrollTo(id: string) {
+  menuOpen = false;
+  const el = document.getElementById(id);
+  if (el) {
+    const headerHeight = document.querySelector("header")?.offsetHeight ?? 80;
+    const top = el.getBoundingClientRect().top + window.scrollY - headerHeight;
+    window.scrollTo({ top, behavior: "smooth" });
+  }
+}
 </script>
 
 <svelte:head>
   <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
-  <div
-    class="container-main flex flex-wrap justify-between items-center gap-5 mb-10"
-  >
-    <h1 class="font-myfont lg:text-6xl md:text-5xl text-4xl leading-tight mt-5">
-      TRISTEN<span class="block">KURUTZ</span>
-    </h1>
-
-    <!-- Nav buttons, are on far right for larger screens and are stacked next to the logo for the smaller screens-->
-    <div
-      class="nav flex flex-col sm:flex-row flex-wrap gap-3 sm:gap-5 items-start sm:items-center mt-5 sm:mt-0 ml-20"
-    >
-      <button class="nav-btn">ABOUT</button>
-      <button class="nav-btn">INDUSTRY EXP.</button>
-      <button class="nav-btn">PROJECTS</button>
-      <button class="nav-btn">CONTACT</button>
-    </div>
-  </div>
+  <title>Tristen Kurutz</title>
 </svelte:head>
 
-<div class="container-main mt-20">
-  {@render children()}
-</div>
+<header class="sticky top-0 z-10 backdrop-blur-sm bg-black/10">
+  <div class="container-main flex items-center justify-between py-4">
+    <a class="wordmark font-myfont" href="/" aria-label="home">
+      TRISTEN<span class="block">KURUTZ</span>
+    </a>
+
+    <nav class="hidden sm:flex gap-8 items-center" aria-label="main navigation">
+      {#each sections as s}
+        <button class="nav-btn" onclick={() => scrollTo(s)}>
+          {s.toUpperCase().replace("EXPERIENCE", "EXP.")}
+        </button>
+      {/each}
+    </nav>
+
+    <button
+      class="sm:hidden bg-transparent border-0 text-white text-xl cursor-pointer p-1"
+      aria-label={menuOpen ? "close menu" : "open menu"}
+      onclick={() => (menuOpen = !menuOpen)}
+    >
+      {menuOpen ? "✕" : "☰"}
+    </button>
+  </div>
+
+  {#if menuOpen}
+    <nav class="sm:hidden flex flex-col px-6 pb-6 pt-2 gap-4 border-t border-white/10" aria-label="mobile navigation">
+      {#each sections as s}
+        <button class="mobile-nav-btn" onclick={() => scrollTo(s)}>
+          {s.toUpperCase().replace("EXPERIENCE", "EXP.")}
+        </button>
+      {/each}
+    </nav>
+  {/if}
+</header>
+
+<main class="container-main pt-8 md:pt-16 pb-24">
+    {@render children()}
+</main>

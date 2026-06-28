@@ -1,0 +1,56 @@
+{
+  "projects": [
+    {
+      "title": "Contrax",
+      "subtitle": "Senior Project with Mindex",
+      "description": "Senior capstone with Mindex as sponsor. React Native fantasy football app where I'm PM and frontend dev. Restructured how we broke down tasks and doubled sprint velocity. Also refactored a messy legacy frontend and wrote a Go script to seed test users for stakeholder demos.",
+      "technologies": [
+        "React Native",
+        "Expo",
+        "Go"
+      ],
+      "github": null,
+      "live": null,
+      "note": "repo private (NDA)"
+    },
+    {
+      "title": "Bird Scholar",
+      "subtitle": "Undergraduate Research",
+      "description": "undergrad research project for WGST-225 looking at citational bias in avian behavioral biology. built citation network graphs from 105 papers using the Semantic Scholar API, NetworkX, and ForceAtlas2. found the same-sex behavior literature was notably less connected, with the most-cited paper being a review calling for more data.",
+      "technologies": [
+        "Python",
+        "NetworkX",
+        "HTML",
+        "CSS",
+        "JavaScript"
+      ],
+      "github": "https://github.com/tristenkurutz/bird-scholar",
+      "live": "https://tristenkurutz.github.io/bird-scholar/"
+    },
+    {
+      "title": "Personal Website",
+      "subtitle": "Personal Project",
+      "description": "my personal portfolio site, built in SvelteKit with Tailwind and GT Walsheim. still a work in progress.",
+      "technologies": [
+        "SvelteKit",
+        "TypeScript",
+        "Tailwind",
+        "SCSS"
+      ],
+      "github": "https://github.com/tristenkurutz/site",
+      "live": null
+    },
+    {
+      "title": "Slack-Discord Bridge",
+      "subtitle": "Personal Project",
+      "description": "mirrors messages between a Slack channel and a Discord channel in both directions, in real time. three separate processes (Slack listener, Discord bot, Flask server) running in parallel to relay messages across platforms.",
+      "technologies": [
+        "Python",
+        "Flask",
+        "WebSockets"
+      ],
+      "github": "https://github.com/tristenkurutz/slack-discord-translation",
+      "live": null
+    }
+  ]
+}

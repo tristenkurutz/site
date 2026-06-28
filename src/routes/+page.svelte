@@ -6,7 +6,9 @@
 
 <!-- ABOUT -->
 <section id="about" class="section">
-  <h2 class="animate-typing overflow-hidden whitespace-nowrap border-r-2 pr-2 pb-2 w-fit">
+  <h2
+    class="animate-typing overflow-hidden whitespace-nowrap border-r-2 pr-2 pb-2 w-fit"
+  >
     howdy!
   </h2>
   <h3>who am i?</h3>
@@ -17,9 +19,9 @@
     the ethics behind what we build and why.
   </p>
   <p>
-    and outside of that: cat dad of two, a RimWorld habit that i couldn't be paid a million dollars to break,
-    amateur photography, and pretty much any craft i can get my
-    hands on.
+    and outside of that: cat dad of two, a RimWorld habit that i couldn't be
+    paid a million dollars to break, amateur photography, and pretty much any
+    craft i can get my hands on.
   </p>
 
   <div class="skills-row">
@@ -66,10 +68,20 @@
           </div>
           <div class="flex gap-3 items-center flex-wrap">
             {#if project.github}
-              <a href={project.github} target="_blank" rel="noopener" class="project-link">github ↗</a>
+              <a
+                href={project.github}
+                target="_blank"
+                rel="noopener"
+                class="project-link">github ↗</a
+              >
             {/if}
             {#if project.live}
-              <a href={project.live} target="_blank" rel="noopener" class="project-link">live ↗</a>
+              <a
+                href={project.live}
+                target="_blank"
+                rel="noopener"
+                class="project-link">live ↗</a
+              >
             {/if}
             {#if project.note}
               <span class="project-note">{project.note}</span>
@@ -90,17 +102,30 @@
 <!-- CONTACT -->
 <section id="contact" class="section">
   <h3>contact</h3>
-  <p>i'm graduating Dec 2026 and looking for full-time roles. feel free to reach out!</p>
+  <p>
+    i'm graduating Dec 2026 and looking for full-time roles. feel free to reach
+    out!
+  </p>
   <div class="contact-links">
     <a href="mailto:tristenkurutz@gmail.com" class="contact-link">
       <span class="contact-label">email</span>
       <span class="contact-value">tristenkurutz@gmail.com ↗</span>
     </a>
-    <a href="https://www.linkedin.com/in/tristen-kurutz/" target="_blank" rel="noopener" class="contact-link">
+    <a
+      href="https://www.linkedin.com/in/tristen-kurutz/"
+      target="_blank"
+      rel="noopener"
+      class="contact-link"
+    >
       <span class="contact-label">linkedin</span>
       <span class="contact-value">tristen-kurutz ↗</span>
     </a>
-    <a href="https://github.com/tristenkurutz" target="_blank" rel="noopener" class="contact-link">
+    <a
+      href="https://github.com/tristenkurutz"
+      target="_blank"
+      rel="noopener"
+      class="contact-link"
+    >
       <span class="contact-label">github</span>
       <span class="contact-value">tristenkurutz ↗</span>
     </a>

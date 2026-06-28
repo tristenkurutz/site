@@ -29,7 +29,6 @@
 }
 
 @layer components {
-
   .nav-btn {
     @apply hover:text-stone-300 transition-colors duration-300 bg-transparent border-0 text-white/60 tracking-widest text-xs cursor-pointer;
   }
@@ -44,9 +43,9 @@
     @apply bg-transparent border-0 text-white/70 text-base tracking-widest cursor-pointer text-left p-0;
   }
 
-.section {
-  @apply mb-16 md:mb-24;
-}
+  .section {
+    @apply mb-16 md:mb-24;
+  }
   .section-sub {
     @apply text-white/60 mb-8;
   }
@@ -127,9 +126,9 @@
     @apply lg:text-5xl md:text-4xl sm:text-3xl text-2xl mb-6;
   }
 
-h3 {
-  @apply lg:text-4xl md:text-3xl sm:text-2xl text-xl mb-2 md:mb-3;
-}
+  h3 {
+    @apply lg:text-4xl md:text-3xl sm:text-2xl text-xl mb-2 md:mb-3;
+  }
 
   h4 {
     @apply font-myfont-lighter lg:text-3xl md:text-2xl sm:text-xl text-base mb-1;

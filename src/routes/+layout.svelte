@@ -9,15 +9,16 @@
 
   const sections = ["about", "experience", "projects", "contact"];
 
- function scrollTo(id: string) {
-  menuOpen = false;
-  const el = document.getElementById(id);
-  if (el) {
-    const headerHeight = document.querySelector("header")?.offsetHeight ?? 80;
-    const top = el.getBoundingClientRect().top + window.scrollY - headerHeight;
-    window.scrollTo({ top, behavior: "smooth" });
+  function scrollTo(id: string) {
+    menuOpen = false;
+    const el = document.getElementById(id);
+    if (el) {
+      const headerHeight = document.querySelector("header")?.offsetHeight ?? 80;
+      const top =
+        el.getBoundingClientRect().top + window.scrollY - headerHeight;
+      window.scrollTo({ top, behavior: "smooth" });
+    }
   }
-}
 </script>
 
 <svelte:head>
@@ -49,7 +50,10 @@
   </div>
 
   {#if menuOpen}
-    <nav class="sm:hidden flex flex-col px-6 pb-6 pt-2 gap-4 border-t border-white/10" aria-label="mobile navigation">
+    <nav
+      class="sm:hidden flex flex-col px-6 pb-6 pt-2 gap-4 border-t border-white/10"
+      aria-label="mobile navigation"
+    >
       {#each sections as s}
         <button class="mobile-nav-btn" onclick={() => scrollTo(s)}>
           {s.toUpperCase().replace("EXPERIENCE", "EXP.")}
@@ -60,5 +64,5 @@
 </header>
 
 <main class="container-main pt-8 md:pt-16 pb-24">
-    {@render children()}
+  {@render children()}
 </main>

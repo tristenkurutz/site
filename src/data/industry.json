@@ -8,9 +8,9 @@
       "endDate": "Present",
       "technologies": ["Java", "Playwright", "GitLab CI/CD"],
       "responsibilities": [
-        "Designing and building a Java-based test orchestration platform from the ground up as a solo project, replacing a legacy ReadyAPI setup",
-        "Migrated 75 API and message queue tests to Playwright, improving maintainability and enabling programmatic test control",
-        "Integrating the platform into GitLab CI/CD pipelines to automate weekly test execution across deployment workflows"
+        "designing and building a Java-based test orchestration platform from the ground up as a solo project, replacing a legacy ReadyAPI setup",
+        "migrating 75 API and message queue tests to Playwright, improving maintainability and enabling programmatic test control",
+        "integrating the platform into GitLab CI/CD pipelines to automate weekly test execution across deployment workflows"
       ]
     },
     {
@@ -21,9 +21,9 @@
       "endDate": "Jun 2026",
       "technologies": ["C#", ".NET", "React"],
       "responsibilities": [
-        "Contributing to full-stack applications with a C# (.NET) backend and React frontend as part of a cross-functional engineering team",
-        "Designing and implementing unit tests using mock objects to ensure reliability, coverage, and dependency isolation",
-        "Resolving frontend tickets for e-commerce platform and internal applications, addressing UI bugs, performance issues, and edge cases"
+        "contributing to full-stack applications with a C# (.NET) backend and React frontend as part of a cross-functional engineering team",
+        "designing and implementing unit tests using mock objects to ensure reliability, coverage, and dependency isolation",
+        "resolving frontend tickets for e-commerce platform and internal applications, addressing UI bugs, performance issues, and edge cases"
       ]
     },
     {
@@ -34,9 +34,9 @@
       "endDate": "Dec 2025",
       "technologies": ["C#", ".NET", "React"],
       "responsibilities": [
-        "Extended existing full-stack applications by implementing features and fixes across C# (.NET) and React stacks",
-        "Led a refactor initiative to improve maintainability and scalability through stronger object-oriented design patterns",
-        "Reduced React warning count from 250+ to zero, improving debugging efficiency and creating a cleaner CI/CD pipeline"
+        "extended existing full-stack applications by implementing features and fixes across C# (.NET) and React stacks",
+        "led a refactor initiative to improve maintainability and scalability through stronger object-oriented design patterns",
+        "reduced React warning count from 250+ to zero, improving debugging efficiency and creating a cleaner CI/CD pipeline"
       ]
     },
     {
@@ -47,9 +47,9 @@
       "endDate": "Aug 2025",
       "technologies": ["Angular", "Figma", "REST APIs"],
       "responsibilities": [
-        "Designed and prototyped comprehensive dashboards in Figma to improve business workflow for viewing credit history disputes",
-        "Implemented services and components in Angular to streamline information from bank and third-party REST APIs into one location",
-        "Collaborated with business and technology stakeholders to design and deliver an efficient, user-focused application"
+        "designed and prototyped comprehensive dashboards in Figma to improve business workflow for viewing credit history disputes",
+        "implemented services and components in Angular to streamline information from bank and third-party REST APIs into one location",
+        "collaborated with business and technology stakeholders to design and deliver an efficient, user-focused application"
       ]
     },
     {
@@ -60,9 +60,9 @@
       "endDate": "Jun 2025",
       "technologies": ["WordPress", "Elementor", "WooCommerce", "AutomatorWP"],
       "responsibilities": [
-        "Utilized WordPress Elementor, WooCommerce, and AutomatorWP to design a seamless user experience",
-        "Designed and developed custom landing pages for painting workshops",
-        "Automated complex workflows using AutomatorWP to streamline user registration and email notifications"
+        "utilized WordPress Elementor, WooCommerce, and AutomatorWP to design a seamless user experience",
+        "designed and developed custom landing pages for painting workshops",
+        "automated complex workflows using AutomatorWP to streamline user registration and email notifications"
       ]
     },
     {
@@ -73,9 +73,9 @@
       "endDate": "Aug 2024",
       "technologies": ["CI/CD", "Artifactory", "Security Scanning"],
       "responsibilities": [
-        "Automated pipelines to manage artifacts in Artifactory and ran security scans across 30 applications",
-        "Identified and resolved 200+ vulnerabilities and conducted regression tests to ensure functionality",
-        "Collaborated with other teams to integrate security scanning tools into CI/CD pipelines"
+        "automated pipelines to manage artifacts in Artifactory and ran security scans across 30 applications",
+        "identified and resolved 200+ vulnerabilities and conducted regression tests to ensure functionality",
+        "collaborated with other teams to integrate security scanning tools into CI/CD pipelines"
       ]
     }
   ]

@@ -7,23 +7,24 @@
 <!-- ABOUT -->
 <section id="about" class="section">
   <h2
-    class="animate-typing overflow-hidden whitespace-nowrap border-r-2 pr-2 pb-2 w-fit"
+    class="animate-typing overflow-hidden whitespace-nowrap border-r-2 pr-2 pb-4 w-fit"
   >
-    howdy!
+    Hey!
   </h2>
-  <h3>who am i?</h3>
+  <h3>Who am I?</h3>
   <p>
-   i'm Tristen, a software engineering student at RIT graduating Dec 2026. currently at M&T Bank building a Java test orchestration platform from scratch. 
-   i care a lot about process and ethics in software; good CI/CD, thoughtful refactors, the why behind what we build
+    I'm Tristen, a software engineering student at RIT graduating Dec 2026. I'm currently at M&T Bank building a Java test orchestration platform from scratch.
+    I care a lot about process and ethics in software.  The why behind what we build is really important to me, and I want to make sure that what we build is 
+    accessible to all kinds of people, is maintainable, and secure.
   </p>
   <p>
-    and outside of that: cat dad of two, a RimWorld habit that i couldn't be
-    paid a million dollars to break, amateur photography, and pretty much any
-    craft i can get my hands on.
+    Outside of that: I am a cat dad of two, have a Rimworld habit that I couldn't be
+    paid a million dollars to break, do amateur photography, and pretty much any
+    craft I can get my hands on.
   </p>
 
   <div class="skills-row">
-    <span class="skills-label">languages & tools</span>
+    <span class="skills-label">Languages & Tools</span>
     <div class="flex flex-wrap gap-1.5">
       {#each ["Angular", "C", "C++", "C#", "CSS", "Go", "HTML", "Java", "JavaScript", ".NET", "PostgreSQL", "Python", "React", "Spring", "TypeScript"] as skill}
         <span class="skill-tag">{skill}</span>
@@ -34,9 +35,9 @@
 
 <!-- EXPERIENCE -->
 <section id="experience" class="section">
-  <h3>industry experience</h3>
+  <h3>Industry Experience</h3>
   <p class="section-sub">
-    i've interned at a few places while at RIT, including:
+    I've interned at a few places while at RIT, including:
   </p>
   <div class="mt-4">
     {#each jobs.experience as job}
@@ -55,7 +56,7 @@
 
 <!-- PROJECTS -->
 <section id="projects" class="section">
-  <h3>projects</h3>
+  <h3>Projects</h3>
   <div class="projects-grid">
     {#each projects.projects as project}
       <div class="project-card">
@@ -70,7 +71,7 @@
                 href={project.github}
                 target="_blank"
                 rel="noopener"
-                class="project-link">github ↗</a
+                class="project-link">GitHub ↗</a
               >
             {/if}
             {#if project.live}
@@ -78,7 +79,7 @@
                 href={project.live}
                 target="_blank"
                 rel="noopener"
-                class="project-link">live ↗</a
+                class="project-link">Live ↗</a
               >
             {/if}
             {#if project.note}
@@ -99,14 +100,14 @@
 
 <!-- CONTACT -->
 <section id="contact" class="section">
-  <h3>contact</h3>
+  <h3>Contact</h3>
   <p>
-    i'm graduating Dec 2026 and looking for full-time roles. feel free to reach
+    I'm graduating Dec 2026 and looking for full-time roles. Feel free to reach
     out!
   </p>
   <div class="contact-links">
     <a href="mailto:tristenkurutz@gmail.com" class="contact-link">
-      <span class="contact-label">email</span>
+      <span class="contact-label">Email</span>
       <span class="contact-value">tristenkurutz@gmail.com ↗</span>
     </a>
     <a
@@ -115,7 +116,7 @@
       rel="noopener"
       class="contact-link"
     >
-      <span class="contact-label">linkedin</span>
+      <span class="contact-label">LinkedIn</span>
       <span class="contact-value">tristen-kurutz ↗</span>
     </a>
     <a
@@ -124,7 +125,7 @@
       rel="noopener"
       class="contact-link"
     >
-      <span class="contact-label">github</span>
+      <span class="contact-label">GitHub</span>
       <span class="contact-value">tristenkurutz ↗</span>
     </a>
   </div>

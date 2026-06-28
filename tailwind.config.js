@@ -14,7 +14,7 @@ export const theme = {
           visibility: "hidden",
         },
         "100%": {
-          width: "6ch",
+          width: "4ch",
         },
       },
       blink: {

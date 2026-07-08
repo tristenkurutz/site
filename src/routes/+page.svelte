@@ -1,7 +1,20 @@
 <script lang="ts">
+  import { onMount } from "svelte";
   import Accordion from "../components/accordion.svelte";
   import jobs from "../data/industry.json";
   import projects from "../data/projects.json";
+
+  // email is built client-side after mount so it never appears as
+  // plain text in the static/prerendered html for scrapers to grab
+  let emailHref = "#";
+  let emailText = "reveal email";
+
+  onMount(() => {
+    const user = "tristenkurutz";
+    const domain = "gmail.com";
+    emailHref = `mailto:${user}@${domain}`;
+    emailText = `${user}@${domain}`;
+  });
 </script>
 
 <!-- ABOUT -->
@@ -108,9 +121,15 @@
     out!
   </p>
   <div class="contact-links">
-    <a href="mailto:tristenkurutz@gmail.com" class="contact-link">
+    <a
+      href={emailHref}
+      class="contact-link"
+      on:click={(e) => {
+        if (emailHref === "#") e.preventDefault();
+      }}
+    >
       <span class="contact-label">Email</span>
-      <span class="contact-value">tristenkurutz@gmail.com ↗</span>
+      <span class="contact-value">{emailText} ↗</span>
     </a>
     <a
       href="https://www.linkedin.com/in/tristen-kurutz/"

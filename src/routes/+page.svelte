@@ -22,10 +22,10 @@
     "TypeScript",
   ];
 
-  // split into two rows of roughly equal width (label length plus padding and
+  // Split into two rows of roughly equal width (label length plus padding and
   // gap approximates the rendered width) rather than equal count, so the two
-  // rows look even. they sit side by side as a single line on wide screens and
-  // stack into two even rows when there isn't room for one
+  // rows look even. They sit side by side as a single line on wide screens and
+  // stack into two even rows when there isn't room for one.
   const tagWidth = (skill: string) => skill.length + 3.5;
   const totalWidth = skills.reduce((sum, s) => sum + tagWidth(s), 0);
   let runningWidth = 0;

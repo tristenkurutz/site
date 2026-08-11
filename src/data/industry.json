@@ -5,12 +5,12 @@
       "company": "M&T Bank",
       "location": "Buffalo, NY",
       "startDate": "Jun 2026",
-      "endDate": "Present",
+      "endDate": "Aug 2026",
       "technologies": ["Java", "Playwright", "GitLab CI/CD"],
       "responsibilities": [
-        "Designing and building a Java-based test orchestration platform from the ground up as a solo project, replacing a legacy ReadyAPI setup",
-        "Migrating 75 API and message queue tests to Playwright, improving maintainability and enabling programmatic test control",
-        "Integrating the platform into GitLab CI/CD pipelines to automate weekly test execution across deployment workflows"
+        "Designed and built a Java-based test orchestration platform from the ground up as a solo project, replacing a legacy ReadyAPI setup",
+        "Migrated 75 API and message queue tests to Playwright, improving maintainability and enabling programmatic test control",
+        "Integrated the platform into GitLab CI/CD pipelines to automate weekly test execution across deployment workflows"
       ]
     },
     {
@@ -21,9 +21,9 @@
       "endDate": "Jun 2026",
       "technologies": ["C#", ".NET", "React"],
       "responsibilities": [
-        "Contributing to full-stack applications with a C# (.NET) backend and React frontend as part of a cross-functional engineering team",
-        "Designing and implementing unit tests using mock objects to ensure reliability, coverage, and dependency isolation",
-        "Resolving frontend tickets for e-commerce platform and internal applications, addressing UI bugs, performance issues, and edge cases"
+        "Contributed to full-stack applications with a C# (.NET) backend and React frontend as part of a cross-functional engineering team",
+        "Designed and implemented unit tests using mock objects to ensure reliability, coverage, and dependency isolation",
+        "Resolved frontend tickets for e-commerce platform and internal applications, addressing UI bugs, performance issues, and edge cases"
       ]
     },
     {

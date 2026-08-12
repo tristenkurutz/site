@@ -10,7 +10,7 @@
         if (localStorage.getItem("high-contrast") === "true") {
           document.documentElement.classList.add("high-contrast");
         }
-      } catch (e) {
+      } catch {
         // storage can be blocked; the toggle still works for the session
       }
     </script>

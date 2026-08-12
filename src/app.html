@@ -3,6 +3,17 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script>
+      // apply the saved contrast preference before the page paints, otherwise
+      // it flashes the default theme on every load
+      try {
+        if (localStorage.getItem("high-contrast") === "true") {
+          document.documentElement.classList.add("high-contrast");
+        }
+      } catch {
+        // storage can be blocked; the toggle still works for the session
+      }
+    </script>
     %sveltekit.head%
   </head>
   <body data-sveltekit-preload-data="hover" class="bg-stone-700 text-stone-400">

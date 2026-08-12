@@ -1,13 +1,27 @@
 <script lang="ts">
   import "../app.css";
   import "../app.scss";
-  import type { Snippet } from "svelte";
+  import { onMount, type Snippet } from "svelte";
+  import Toggle from "../components/toggle.svelte";
 
   const { children }: { children: Snippet } = $props();
 
   let menuOpen = $state(false);
+  let highContrast = $state(false);
 
   const sections = ["about", "experience", "projects", "contact"];
+
+  // the inline script in app.html has already applied the saved preference
+  // before paint, so read it back off the element rather than localStorage
+  onMount(() => {
+    highContrast = document.documentElement.classList.contains("high-contrast");
+  });
+
+  function setContrast(on: boolean) {
+    highContrast = on;
+    document.documentElement.classList.toggle("high-contrast", on);
+    localStorage.setItem("high-contrast", String(on));
+  }
 
   function scrollTo(id: string) {
     menuOpen = false;
@@ -38,6 +52,7 @@
           {s.toUpperCase().replace("EXPERIENCE", "EXP.")}
         </button>
       {/each}
+      <Toggle checked={highContrast} label="Contrast" onchange={setContrast} />
     </nav>
 
     <button
@@ -59,6 +74,7 @@
           {s.toUpperCase().replace("EXPERIENCE", "EXP.")}
         </button>
       {/each}
+      <Toggle checked={highContrast} label="Contrast" onchange={setContrast} />
     </nav>
   {/if}
 </header>

@@ -117,6 +117,60 @@
   }
 }
 
+// high contrast mode, toggled by adding .high-contrast to <html>.
+.high-contrast {
+  body {
+    @apply bg-black text-white;
+  }
+
+  // keep the header distinct from the body the way the translucent black over
+  // stone does normally, plus a hard edge so the boundary is unmistakable
+  header {
+    @apply bg-stone-900 border-b border-white;
+  }
+
+  .nav-btn,
+  .mobile-nav-btn,
+  .section-sub,
+  .skills-label,
+  .skill-tag,
+  .project-subtitle,
+  .project-link,
+  .project-desc,
+  .project-note,
+  .project-tag,
+  .contact-label,
+  .accordion-role,
+  .accordion-location,
+  .accordion-dates,
+  .accordion-arrow,
+  .accordion-tag,
+  .accordion-list li {
+    @apply text-white;
+  }
+
+  .skill-tag,
+  .project-tag,
+  .accordion-tag,
+  .project-card,
+  .accordion,
+  .accordion:last-child,
+  .contact-link,
+  .contact-link:last-child {
+    @apply border-white;
+  }
+
+  .nav-btn:hover,
+  .project-link:hover,
+  .project-card:hover {
+    @apply text-yellow-300 border-yellow-300;
+  }
+
+  .contact-link:hover {
+    @apply opacity-100 text-yellow-300;
+  }
+}
+
 @layer base {
   h1 {
     @apply font-myfont lg:text-5xl md:text-4xl sm:text-3xl text-2xl;

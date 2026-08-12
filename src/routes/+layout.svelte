@@ -20,7 +20,11 @@
   function setContrast(on: boolean) {
     highContrast = on;
     document.documentElement.classList.toggle("high-contrast", on);
-    localStorage.setItem("high-contrast", String(on));
+    try {
+      localStorage.setItem("high-contrast", String(on));
+    } catch {
+      // storage can be blocked; keep preference for this session only
+    }
   }
 
   function scrollTo(id: string) {

@@ -213,5 +213,16 @@
       <span class="contact-label">GitHub</span>
       <span class="contact-value">tristenkurutz{@render externalIcon()}</span>
     </a>
+    <a
+      href="/Kurutz_Tristen_Resume.pdf"
+      target="_blank"
+      rel="noopener"
+      class="contact-link"
+    >
+      <span class="contact-label">Resume</span>
+      <span class="contact-value"
+        >Kurutz_Tristen_Resume.pdf{@render externalIcon()}</span
+      >
+    </a>
   </div>
 </section>

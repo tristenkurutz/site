@@ -57,8 +57,10 @@
 
 <!-- ABOUT -->
 <section id="about" class="section">
+  <!-- box-content so the typing animation's 4ch end width is 4 characters of
+       text, not 4ch minus the padding and the cursor border -->
   <h2
-    class="animate-typing overflow-hidden whitespace-nowrap border-r-2 pr-2 pb-4 w-fit"
+    class="animate-typing box-content overflow-hidden whitespace-nowrap border-r-2 pr-2 pb-4 w-fit"
   >
     Hey!
   </h2>

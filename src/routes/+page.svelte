@@ -4,6 +4,9 @@
   import jobs from "../data/industry.json";
   import projects from "../data/projects.json";
 
+  // typed out one character at a time by the heading below
+  const heyChars = [..."Hey!"];
+
   const skills = [
     "Angular",
     "C",
@@ -57,12 +60,19 @@
 
 <!-- ABOUT -->
 <section id="about" class="section">
-  <!-- box-content so the typing animation's 4ch end width is 4 characters of
-       text, not 4ch minus the padding and the cursor border -->
+  <!-- split per character so the cursor steps on real glyph boundaries; the
+       spans must not be separated by whitespace or it types phantom gaps.
+       box-content min-h-[1lh] holds one line of height while the characters
+       are still absent (border-box would let pb-4 eat into that floor).
+       aria-label keeps this a single word for screen readers. -->
   <h2
-    class="animate-typing box-content overflow-hidden whitespace-nowrap border-r-2 pr-2 pb-4 w-fit"
+    aria-label="Hey!"
+    class="animate-cursor box-content min-h-[1lh] w-fit whitespace-nowrap border-r-2 pr-2 pb-4"
   >
-    Hey!
+    {#each heyChars as char, i}<span
+        class="animate-reveal"
+        style="animation-delay: {(i + 1) * 0.1875}s">{char}</span
+      >{/each}
   </h2>
   <h3>Who am I?</h3>
   <p>

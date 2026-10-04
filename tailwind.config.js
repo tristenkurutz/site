@@ -8,14 +8,14 @@ export const theme = {
      * https://tailwindflex.com/@samuel33/typewriter-animation-effect
      **/
     keyframes: {
-      typing: {
-        "0%": {
-          width: "0%",
-          visibility: "hidden",
-        },
-        "100%": {
-          width: "4ch",
-        },
+      /* Each character is absent until its own delay, so the cursor lands on
+         real glyph boundaries. Animating the container's width instead divides
+         it evenly, which never matches a proportional font ("H" is five times
+         the width of "!"). display rather than font-size: a zero-size inline
+         box still centers its leading on the baseline and grows the line. */
+      reveal: {
+        from: { display: "none" },
+        to: { display: "inline" },
       },
       blink: {
         "50%": {
@@ -30,10 +30,10 @@ export const theme = {
       },
     },
     animation: {
-      // steps() must match the character count of the animated text ("Hey!" = 4)
-      // so each step reveals exactly one character instead of part of one
-      typing:
-        "typing 0.75s steps(4) forwards, blink .7s step-end 4, hideCursor 0s linear 2.8s forwards",
+      // "both" so each character stays absent through its delay, leaving the
+      // cursor alone at the start, before the first letter
+      reveal: "reveal 0s step-end both",
+      cursor: "blink .7s step-end 4, hideCursor 0s linear 2.8s forwards",
     },
   },
 };

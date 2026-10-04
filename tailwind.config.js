@@ -30,8 +30,10 @@ export const theme = {
       },
     },
     animation: {
+      // steps() must match the character count of the animated text ("Hey!" = 4)
+      // so each step reveals exactly one character instead of part of one
       typing:
-        "typing 0.75s steps(6) forwards, blink .7s step-end 4, hideCursor 0s linear 2.8s forwards",
+        "typing 0.75s steps(4) forwards, blink .7s step-end 4, hideCursor 0s linear 2.8s forwards",
     },
   },
 };

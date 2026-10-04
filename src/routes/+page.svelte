@@ -62,12 +62,10 @@
 <section id="about" class="section">
   <!-- split per character so the cursor steps on real glyph boundaries; the
        spans must not be separated by whitespace or it types phantom gaps.
-       box-content min-h-[1lh] holds one line of height while the characters
-       are still absent (border-box would let pb-4 eat into that floor).
        aria-label keeps this a single word for screen readers. -->
   <h2
     aria-label="Hey!"
-    class="animate-cursor box-content min-h-[1lh] w-fit whitespace-nowrap border-r-2 pr-2 pb-4"
+    class="animate-cursor w-fit whitespace-nowrap border-r-2 pr-2 pb-4"
   >
     {#each heyChars as char, i}<span
         class="animate-reveal"
